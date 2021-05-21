@@ -1,10 +1,10 @@
 {
   "name": "authentication",
   "version": "1.0.0",
-  "description": "Small authentication backend for user management, implements mongodb for handling users, redis for cookie and sessions, nodejs+express for routes controllers and logic. ",
+  "description": "Small authentication backend for user management, implements mysql for handling users, redis for cookie and sessions, nodejs+express for routes controllers and logic. ",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/devanbenz/Authentication/issues"
   },
-  "homepage": "https://github.com/devanbenz/Authentication#readme"
+  "homepage": "https://github.com/devanbenz/Authentication#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
